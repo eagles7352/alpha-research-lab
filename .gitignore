@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# --- Project-specific (alpha-research-lab) ---
+
+# Local data / outputs (keep folders, ignore contents)
+data/*
+db/*
+reports/*
+!data/.gitkeep
+!db/.gitkeep
+!reports/.gitkeep
+
+# DuckDB files (database + sidecar files)
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
+
+# IDE noise (optional, but nice)
+.idea/
+.vscode/
+.DS_Store
+
